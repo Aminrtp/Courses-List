@@ -37,3 +37,17 @@ p {
   background-color: #ffedd5;
   color: #c2410c;
 }
+
+.text-field {
+  height: 2rem;
+  padding: 0.5rem 0.7rem;
+  border-color: gray;
+  border-radius: 0.6rem;
+  color: gray;
+  background-color:white;
+  font-size: 1rem;
+}
+
+.text-field::placeholder {
+  color: gray;
+}

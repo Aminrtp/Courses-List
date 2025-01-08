@@ -1,6 +1,6 @@
 import CourseCard from './CourseCard';
 
-const courses = [
+let courses = [
     {
         id: 1,
         title: "English Lecture",
@@ -36,12 +36,19 @@ const courses = [
 ];
 
 
-function CourseList() {
+function CourseList({ search }) {
+
     return (
         <div>
-            {courses.length > 0 &&
-                courses.map((course) => <CourseCard course={course} key={course.id} />
-                )}
+            {courses.length > 0 &&(
+                <>
+                {(search.length ? courses.filter(course => course.title.toLowerCase().includes(search.toLowerCase())) : courses).map(course => (
+                  <CourseCard course={course} key={course.id} />
+                ))}
+              </>
+            )
+             
+                }
         </div>
 
 

@@ -94,3 +94,9 @@ h1 {
 .course-item__footer .caption .badge {
   font-weight: bold;
 }
+
+.course-search {
+  display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
