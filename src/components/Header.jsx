@@ -5,8 +5,8 @@ function Header({ children }) {
     return (
         <div>
             <div className='course-search'>
-                {children}
                 <h1 >My Courses (3)</h1>
+                {children}
             </div>
             <div className="course-status">
                 {
